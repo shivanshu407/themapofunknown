@@ -211,6 +211,33 @@ const initialQuestions = [
       'Philosophical positions range from reductionist to dualist; scientific theories include integrated information theory and global workspace theory.',
     assumptions: 'Assumes consciousness has a physical basis but is not fully explained by functional or behavioural descriptions.',
     connections: []
+  },
+
+  // Additional bridging questions to create a network reminiscent of a knowledge tree.
+  // These nodes link concepts like entropy, the arrow of time and the ultimate fate of the
+  // universe, as suggested by the user. They emphasise that many mysteries run
+  // together across fields rather than following a strict chronology.
+  {
+    id: 'it_entropy_time',
+    category: 'information',
+    question: 'How does entropy relate to the arrow of time?',
+    importance:
+      'Understanding why time has a preferred direction and how entropy governs this arrow is a key question bridging thermodynamics, cosmology and quantum mechanics.',
+    currentIdeas:
+      'Proposals include the low-entropy initial conditions of the universe, coarse-graining and decoherence in quantum mechanics, and the role of gravitational entropy in cosmology.',
+    assumptions: 'Assumes entropy and statistical mechanics provide a fundamental explanation for the directionality of time.',
+    connections: ['gr_problem_time', 'cos_dark_energy', 'it_information_paradox']
+  },
+  {
+    id: 'cos_fate_universe',
+    category: 'cosmology',
+    question: 'What is the ultimate fate of the universe?',
+    importance:
+      'Determining whether the universe will expand forever, recollapse or end in a Big Rip touches on dark energy, dark matter and the geometry of spacetime.',
+    currentIdeas:
+      'Scenarios include heat death, Big Crunch, Big Rip and cyclic bounces; the nature of dark energy and spatial curvature influences the outcome.',
+    assumptions: 'Assumes the composition of the universe and the laws of gravity apply on cosmic time scales.',
+    connections: ['cos_dark_energy', 'cos_dark_matter', 'cos_inflation', 'gr_quantum_gravity']
   }
 ];
 

@@ -5,10 +5,14 @@ information theory, mathematics and consciousness into a **web of mysteries**.
 Each node in the network represents an unresolved question and edges
 indicate connections between them. By visualising and augmenting this map, you
 can begin to see how seemingly disparate problems often point to deeper
-structures in our understanding of reality. The project draws inspiration from
-a conversation reflecting on how humanity’s greatest theories still contain
-cracks and how uncovering the **unknown** is itself a noble pursuit【
-fileciteturn0file0L33-L45】.
+structures in our understanding of reality.  Inspired by a reflection on how
+humanity’s greatest theories still contain cracks and how uncovering the
+**unknown** is itself a noble pursuit【fileciteturn0file0L33-L45】, the map is
+designed as a **network**, not a chronological tree.  Some nodes represent
+bridging questions—such as how entropy relates to the arrow of time or what
+determines the ultimate fate of the universe—that link multiple domains
+together.  These connections highlight that many mysteries in physics and
+mathematics do not stand alone but intertwine across disciplines.
 
 ## How it works
 
@@ -49,6 +53,13 @@ including:
   smoothness problem【551633113154856†L54-L64】.
 * The **hard problem of consciousness**, which asks why physical processes
   generate subjective experience【79714064107532†L174-L196】.
+
+In addition to the concrete questions sourced above, the initial dataset
+contains a few **bridging questions** to illustrate how themes recur across
+fields.  For example, the map asks how entropy is linked to the arrow of time
+and what will ultimately happen to our universe.  These questions do not stem
+from a single source but synthesize ideas from thermodynamics, cosmology
+and quantum gravity to encourage users to draw connections between them.
 
 These citations are provided both to credit the original authors and to serve
 as starting points for readers who wish to delve deeper. Whenever you add
