@@ -369,12 +369,34 @@ function drawGraph(nodes) {
   });
 
   simulation.on('tick', () => {
+    // Keep nodes and links within the bounds of the graph container.  The clamp
+    // prevents nodes from being dragged out of view.
     link
-      .attr('x1', (d) => d.source.x)
-      .attr('y1', (d) => d.source.y)
-      .attr('x2', (d) => d.target.x)
-      .attr('y2', (d) => d.target.y);
-    node.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
+      .attr('x1', (d) => {
+        d.source.x = Math.max(8, Math.min(width - 8, d.source.x));
+        return d.source.x;
+      })
+      .attr('y1', (d) => {
+        d.source.y = Math.max(8, Math.min(height - 8, d.source.y));
+        return d.source.y;
+      })
+      .attr('x2', (d) => {
+        d.target.x = Math.max(8, Math.min(width - 8, d.target.x));
+        return d.target.x;
+      })
+      .attr('y2', (d) => {
+        d.target.y = Math.max(8, Math.min(height - 8, d.target.y));
+        return d.target.y;
+      });
+    node
+      .attr('cx', (d) => {
+        d.x = Math.max(8, Math.min(width - 8, d.x));
+        return d.x;
+      })
+      .attr('cy', (d) => {
+        d.y = Math.max(8, Math.min(height - 8, d.y));
+        return d.y;
+      });
   });
 }
 

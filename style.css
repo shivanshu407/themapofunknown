@@ -4,6 +4,8 @@ body {
   padding: 0;
   background: #f6f8fa;
   color: #333;
+  /* Prevent horizontal overflow caused by wide SVG or layout */
+  overflow-x: hidden;
 }
 
 header {
@@ -24,14 +26,14 @@ header p {
 
 main {
   display: flex;
-  flex-wrap: wrap;
-  padding: 1em;
+  flex-direction: column;
   gap: 2em;
+  padding: 1em;
 }
 
+/* Section containing the interactive graph */
 #graph-section {
-  flex: 2 1 600px;
-  min-width: 300px;
+  width: 100%;
   background: #fff;
   border-radius: 8px;
   padding: 1em;
@@ -40,22 +42,23 @@ main {
 
 #graph {
   width: 100%;
-  height: 500px;
+  height: 60vh;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 1em;
+  border-radius: 6px;
 }
 
-#details {
-  background: #fdfdfd;
-  border: 1px solid #eee;
-  padding: 1em;
-  border-radius: 4px;
-  font-size: 0.9em;
+/* Container for the details panel and the add-question form */
+#info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
 }
 
+/* Shared styling for details and add sections */
+#details,
 #add-section {
-  flex: 1 1 350px;
+  flex: 1 1 400px;
   min-width: 280px;
   background: #fff;
   border-radius: 8px;
@@ -63,6 +66,15 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Headings inside the details and add sections */
+#details h3,
+#add-section h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #0b3d91;
+}
+
+/* Layout for the add form */
 #add-section form {
   display: flex;
   flex-direction: column;
@@ -86,6 +98,23 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1em;
+}
+
+/* Make the list of connections scrollable to avoid excessive vertical height */
+#connectionOptions {
+  max-height: 180px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 0.5em;
+  background: #f9f9f9;
+}
+
+/* Ensure connection labels wrap nicely */
+.connection-label {
+  display: block;
+  margin: 0.25em 0;
+  font-size: 0.9em;
 }
 
 button[type="submit"] {

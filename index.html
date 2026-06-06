@@ -22,43 +22,47 @@
     </p>
   </header>
   <main>
+    <!-- Interactive map occupies full width -->
     <section id="graph-section">
       <h2>Interactive Map</h2>
       <div id="graph"></div>
+    </section>
+    <!-- Details and add question sections are placed together below the map -->
+    <section id="info-section">
       <div id="details">
         <h3>Question details</h3>
         <p>Select a node to see its details here.</p>
       </div>
-    </section>
-    <section id="add-section">
-      <h2>Add a New Question</h2>
-      <form id="addForm">
-        <div class="form-group">
-          <label for="question">Question</label>
-          <input type="text" id="question" name="question" required />
-        </div>
-        <div class="form-group">
-          <label for="importance">Why is it important?</label>
-          <textarea id="importance" name="importance" rows="2" required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="currentIdeas">Current leading ideas</label>
-          <textarea id="currentIdeas" name="currentIdeas" rows="2"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="assumptions">Assumptions</label>
-          <textarea id="assumptions" name="assumptions" rows="2"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="category">Category</label>
-          <select id="category" name="category" required></select>
-        </div>
-        <div class="form-group">
-          <label>Connect to existing questions</label>
-          <div id="connectionOptions"></div>
-        </div>
-        <button type="submit">Add Question</button>
-      </form>
+      <div id="add-section">
+        <h3>Add a New Question</h3>
+        <form id="addForm">
+          <div class="form-group">
+            <label for="question">Question</label>
+            <input type="text" id="question" name="question" required />
+          </div>
+          <div class="form-group">
+            <label for="importance">Why is it important?</label>
+            <textarea id="importance" name="importance" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="currentIdeas">Current leading ideas</label>
+            <textarea id="currentIdeas" name="currentIdeas" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="assumptions">Assumptions</label>
+            <textarea id="assumptions" name="assumptions" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" required></select>
+          </div>
+          <div class="form-group">
+            <label>Connect to existing questions</label>
+            <div id="connectionOptions"></div>
+          </div>
+          <button type="submit">Add Question</button>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
